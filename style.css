@@ -1,53 +1,83 @@
+/* === GLOBAL STYLES === */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #fafafa;
-    color: #333;
-    line-height: 1.6;
-  }
-  
-  nav {
-    background: #111;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-  }
-  
-  nav ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  nav li {
-    display: inline;
-    margin: 0 15px;
-  }
-  
-  nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  section {
-    padding: 40px 20px;
-    max-width: 800px;
-    margin: auto;
-  }
-  
-  #writings .writing {
-    background: white;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 1px 5px rgba(0,0,0,0.1);
-  }
-  
-  footer {
-    background: #111;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-  }
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background-color: #0b2e13;
+  color: #e0f2e9;
+  scroll-behavior: smooth;
+  line-height: 1.6;
+}
+
+/* === NAVIGATION === */
+nav {
+  background-color: #1d5632;
+  padding: 15px 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin: 0 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #e0f2e9;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+nav a:hover {
+  color: #a1e3b0;
+}
+
+/* === SECTIONS === */
+section {
+  padding: 80px 20px;
+  max-width: 800px;
+  margin: auto;
+  border-bottom: 1px solid #133f25;
+}
+
+section:last-of-type {
+  border-bottom: none;
+}
+
+h1, h2, h3 {
+  color: #a1e3b0;
+}
+
+p {
+  font-size: 1.1em;
+}
+
+/* === WRITING BOXES === */
+.writing {
+  background-color: #133f25;
+  padding: 25px;
+  margin-top: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.writing a {
+  color: #a1e3b0;
+  text-decoration: underline;
+}
+
+/* === FOOTER === */
+footer {
+  background-color: #1d5632;
+  text-align: center;
+  padding: 30px;
+  font-size: 0.9em;
+}
